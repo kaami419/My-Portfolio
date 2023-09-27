@@ -33,16 +33,20 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        "service_xh8fou3",
+        "template_mzvdimz",
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Hamza Kamran",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "tareen544@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        // import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        "3EL9W0SkjghWosdF9"
+
       )
       .then(
         () => {
@@ -130,8 +134,8 @@ const Contact = () => {
             type='submit'
             className='py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
             style={{
-              backgroundImage: 'linear-gradient(180deg, #0037ce 0%, #0037ce 100%)',
-            }}
+                backgroundImage: 'linear-gradient(180deg, #0037ce 0%, #0037ce 100%)',
+              }}
           >
             {loading ? "Sending..." : "Send"}
           </button>
