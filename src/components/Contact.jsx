@@ -35,8 +35,8 @@ const Contact = () => {
       .send(
         // import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         // import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-        "service_xh8fou3",
-        "template_mzvdimz",
+        "service_ehrkeeo",
+        "template_9hx1gc3",
         {
           from_name: form.name,
           to_name: "Hamza Kamran",
@@ -74,9 +74,10 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] p-8 rounded-2xl'
+        className="flex-[0.75] p-8 rounded-2xl"
         style={{
-          backgroundImage: 'linear-gradient(180.13deg, #0037ce 1.9%, #F62911 97.5%)',
+          backgroundImage:
+            "linear-gradient(180.13deg, #0037ce 1.9%, #F62911 97.5%)",
         }}
       >
         <p className={styles.sectionSubText}>Get in touch</p>
@@ -85,57 +86,61 @@ const Contact = () => {
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8'
+          className="mt-12 flex flex-col gap-8"
         >
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Name</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Name</span>
             <input
-              type='text'
-              name='name'
+              type="text"
+              name="name"
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className='py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className="py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               style={{
-                backgroundImage: 'linear-gradient(180deg, #0037ce 0%, #0037ce 100%)',
+                backgroundImage:
+                  "linear-gradient(180deg, #0037ce 0%, #0037ce 100%)",
               }}
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your email</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your email</span>
             <input
-              type='email'
-              name='email'
+              type="email"
+              name="email"
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              className="py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               style={{
-                backgroundImage: 'linear-gradient(180deg, #0037ce 0%, #0037ce 100%)',
+                backgroundImage:
+                  "linear-gradient(180deg, #0037ce 0%, #0037ce 100%)",
               }}
             />
           </label>
-          <label className='flex flex-col'>
-            <span className='text-white font-medium mb-4'>Your Message</span>
+          <label className="flex flex-col">
+            <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows={7}
-              name='message'
+              name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder='What you want to say?'
-              className='py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              placeholder="What you want to say?"
+              className="py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
               style={{
-                backgroundImage: 'linear-gradient(180deg, #0037ce 0%, #0037ce 100%)',
+                backgroundImage:
+                  "linear-gradient(180deg, #0037ce 0%, #0037ce 100%)",
               }}
             />
           </label>
 
           <button
-            type='submit'
-            className='py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            type="submit"
+            className="py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
             style={{
-                backgroundImage: 'linear-gradient(180deg, #0037ce 0%, #0037ce 100%)',
-              }}
+              backgroundImage:
+                "linear-gradient(180deg, #0037ce 0%, #0037ce 100%)",
+            }}
           >
             {loading ? "Sending..." : "Send"}
           </button>
@@ -144,7 +149,7 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
       </motion.div>
